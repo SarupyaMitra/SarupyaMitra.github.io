@@ -173,165 +173,174 @@ Facial Expression Recognition.
 
 <h2>Projects</h2>
 
-<!-- <div class="project-grid">
-
-    <div class="project-card">
-    <h3>Vision Transformer from Scratch</h3>
-
-    <p>
-    Implemented a ViT architecture independently in PyTorch and
-    performed extensive ablation studies on CIFAR-100 and Food-101.
-    </p>
-    <a href="https://github.com/SarupyaMitra/VisionTransformerfromScratch">GitHub Repo →</a>
-    </div>
-
-    <div class="project-card">
-    <h3>Skin Lesion Classification using SimCLR</h3>
-
-    <p>
-    Built a complete self-supervised learning pipeline using NT-Xent loss,
-    contrastive augmentations and downstream linear evaluation.
-    </p>
-    <a href="https://github.com/SarupyaMitra/Skin-Lesion-Classification-using-SimCLR">GitHub Repo →</a>
-    </div>
-
-    <div class="project-card">
-    <h3>Underwater Image Enhancement</h3>
-
-    <p>
-    Implemented multiple restoration pipelines including
-    AWB + CLAHE and Dark Channel Prior variants.
-    </p>
-    <a href="https://github.com/SarupyaMitra/Underwater-Image-Enhancement-using-Classical-Methods-">GitHub Repo →</a>
-    </div>
-
-    <div class="project-card">
-    <h3>Facial Expression Recognition</h3>
-
-    <p>
-    Implemented multi-scale Gabor filters from scratch and
-    trained SVM-based emotion recognition models.
-    </p>
-    <a href="https://github.com/SarupyaMitra/Facial-Emotion-Detection-on-CK-dataset">GitHub Repo →</a>
-    </div>
-
-</div> -->
-
 <div class="project-grid">
 
     <div class="project-card">
-        <h3>Vision Transformer from Scratch</h3>
-
-        <p>
-            Implemented a Vision Transformer in PyTorch without pre-built transformer modules and
-            conducted ablation studies across patch size, embedding dimension, depth, dropout,
-            and learning rate scheduling.
-        </p>
-
-        <p class="tech-stack">
-            PyTorch • Vision Transformer • Deep Learning
-        </p>
-
-        <div class="project-findings">
-            <h4>Key Findings</h4>
-
-            <ul>
-            <li>Improved CIFAR-100 accuracy from ~42% to ~53%.</li>
-            <li>Achieved ~61.5% accuracy on Food-101.</li>
-            <li>Identified MLP dropout as the most effective regularization strategy.</li>
-            </ul>
-
+        <div class="project-img-wrap">
+                <img src="assets/vit_training_exp8.png"
+                alt="ViT Food-101 training loss curve" loading="lazy" onerror="this.parentElement.style.display='none'">
         </div>
+        <div class="project-body">
+            <h3>Vision Transformer from Scratch</h3>
 
-        <a href="https://github.com/SarupyaMitra/VisionTransformerfromScratch">
-            GitHub Repo →
-        </a>
+            <p>
+                Implemented a Vision Transformer in PyTorch without pre-built transformer modules and
+                conducted ablation experiments on CIFAR-100 and Food-101 datasets, studying the impact of patch size, embedding dimension, depth, dropout,
+                and learning rate scheduling.
+            </p>
+            <div class="project-result">
+                <span class="result-chip">📊 61.5% acc on Food-101</span>
+                <span class="result-chip">🔬 8 ablation experiments</span>                
+            </div>
+            <div class="project-tags">
+                <span>PyTorch</span><span>ViT</span><span>CIFAR-100</span><span>Food-101</span>
+            </div>
+
+            <!-- <p class="tech-stack">
+                PyTorch • Vision Transformer • Deep Learning
+            </p>
+
+            <div class="project-findings">
+                <h4>Key Findings</h4>
+
+                <ul>
+                <li>Improved CIFAR-100 accuracy from ~42% to ~53%.</li>
+                <li>Achieved ~61.5% accuracy on Food-101.</li>
+                <li>Identified MLP dropout as the most effective regularization strategy.</li>
+                </ul>
+
+            </div> -->
+
+            <a class="project-link" href="https://github.com/SarupyaMitra/VisionTransformerfromScratch"  target="_blank">
+                GitHub Repo →
+            </a>
+        </div>
     </div>
 
     <div class="project-card">
-        <h3>Skin Lesion Classification using SimCLR</h3>
-
-        <p>
-            Built a complete SimCLR self-supervised learning pipeline using contrastive learning,
-            NT-Xent loss, and custom augmentations on the DermaMNIST dataset.
-        </p>
-
-        <p class="tech-stack">
-            PyTorch • Self Supervised Learning • Deep Learning
-        </p>
-
-        <div class="project-findings">
-            <h4>Key Findings</h4>
-
-            <ul>
-            <li>Achieved 70% downstream classification accuracy.</li>
-            <li>Performed confusion matrix and classification report analysis.</li>
-            <li>Used t-SNE to study representation quality and class separability.</li>
-            </ul>
-
+        <div class="project-img-wrap">
+            <img src="assets/simclr_tsne_downstream_100.png" 
+            alt="SimCLR t-SNE visualisation" loading="lazy" onerror="this.parentElement.style.display='none'">
         </div>
+        <div class="project-body">
+            <h3>Skin Lesion Classification using SimCLR</h3>
+
+            <p>
+                Built a complete SimCLR self-supervised learning pipeline on DermaMNIST dataset using NT-Xent contrastive loss.
+                Pretrained for 1000 epochs, then evaluated three downstream setups(frozen probe, fine-tune for 20 epochs, fine-tune for 100 epochs).
+            </p>
+            <div class="project-result">
+                <span class="result-chip">📊 70% overall accuracy</span>
+                <span class="result-chip">🧬 7-class medical SSL</span>
+            </div>
+            <div class="project-tags">
+                <span>PyTorch</span><span>SimCLR</span><span>SSL</span><span>DermaMNIST</span>
+            </div>            
+
+            <!-- <p class="tech-stack">
+                PyTorch • Self Supervised Learning • Deep Learning
+            </p>
+
+            <div class="project-findings">
+                <h4>Key Findings</h4>
+
+                <ul>
+                <li>Achieved 70% downstream classification accuracy.</li>
+                <li>Performed confusion matrix and classification report analysis.</li>
+                <li>Used t-SNE to study representation quality and class separability.</li>
+                </ul>
+
+            </div> -->
 
 
 
-        <a href="https://github.com/SarupyaMitra/Skin-Lesion-Classification-using-SimCLR">
-            GitHub Repo →
-        </a>
+            <a class="project-link" href="https://github.com/SarupyaMitra/Skin-Lesion-Classification-using-SimCLR"  target="_blank">
+                GitHub Repo →
+            </a>
+        </div>
     </div>
 
     <div class="project-card">
-        <h3>Underwater Image Enhancement</h3>
-
-        <p>
-            Implemented multiple classical enhancement pipelines including AWB + CLAHE and
-            Dark Channel Prior based restoration methods for underwater imagery.
-        </p>
-
-        <p class="tech-stack">
-            NumPy • OpenCV • Computer Vision
-        </p>
-
-        <div class="project-findings">
-            <h4>Key Findings</h4>
-
-            <ul>
-            <li>Designed a red-channel compensation preprocessing technique.</li>
-            <li>Implemented a modified DCP using green-blue channel priors.</li>
-            <li>AWB + CLAHE achieved the highest mean UIQM score (~2.19).</li>
-            </ul>
-
+        <div class="project-img-wrap">
+            <img src="assets/uieb_output.png" 
+            alt="Underwater model result" loading="lazy" onerror="this.parentElement.style.display='none'">
         </div>
+        <div class="project-body">
+            <h3>Underwater Image Enhancement</h3>
+            <p>
+                Implemented four classical enhancement pipelines from scratch on the UIEB dataset: max-RGB AWB + CLAHE,
+                Basic DCP, Red Channel compensated DCP and Min Green-Blue DCP.
+            </p>
 
-        <a href="https://github.com/SarupyaMitra/Underwater-Image-Enhancement-using-Classical-Methods-">
-            GitHub Repo →
-        </a>
+            <div class="project-result">
+                <span class="result-chip">🖼️ 4 pipeline variants</span>
+                <span class="result-chip">📐 UIEB benchmark</span>
+            </div>
+            <div class="project-tags">
+                <span>OpenCV</span><span>NumPy</span><span>Dark Channel Prior</span><span>CLAHE</span><span>AWB</span>
+            </div>
+
+            <!-- <p class="tech-stack">
+                NumPy • OpenCV • Computer Vision
+            </p>
+
+            <div class="project-findings">
+                <h4>Key Findings</h4>
+
+                <ul>
+                <li>Designed a red-channel compensation preprocessing technique.</li>
+                <li>Implemented a modified DCP using green-blue channel priors.</li>
+                <li>AWB + CLAHE achieved the highest mean UIQM score (~2.19).</li>
+                </ul>
+
+            </div> -->
+
+            <a class="project-link" href="https://github.com/SarupyaMitra/Underwater-Image-Enhancement-using-Classical-Methods-"  target="_blank">
+                GitHub Repo →
+            </a>
+        </div>
     </div>
 
     <div class="project-card">
-        <h3>Facial Expression Recognition</h3>
-
-        <p>
-            Developed a facial expression recognition pipeline using handcrafted Gabor features
-            and a Linear SVM classifier on the CK+ dataset.
-        </p>
-
-        <p class="tech-stack">
-            NumPy • Scikit-learn • Computer Vision
-        </p>
-
-        <div class="project-findings">
-            <h4>Key Findings</h4>
-
-            <ul>
-            <li>Implemented multi-scale, multi-orientation Gabor filter banks from scratch.</li>
-            <li>Extracted block-wise orientation energy descriptors.</li>
-            <li>Achieved 80.1% emotion classification accuracy.</li>
-            </ul>
-
+        <div class="project-img-wrap">
+            <img src="assets/gabor_kernel.png" alt="Gabor filter kernel visualisation"
+            loading="lazy" onerror="this.parentElement.classList.add('project-img-placeholder'); this.style.display='none'">
         </div>
+        <div class="project-body">
+            <h3>Facial Expression Recognition</h3>
 
-        <a href="https://github.com/SarupyaMitra/Facial-Emotion-Detection-on-CK-dataset">
-            GitHub Repo →
-        </a>
+            <p>
+                Developed a facial expression recognition pipeline using handcrafted multi-scale Gabor features 
+                and a Linear SVM classifier on the CK+ dataset.
+            </p>
+
+            <div class="project-result">
+                <span class="result-chip">🎭 CK+ dataset</span>
+                <span class="result-chip">⚙️ Gabor + SVM pipeline</span>
+            </div>
+            <div class="project-tags">
+                <span>NumPy</span><span>scikit-learn</span><span>Support Vector Machine</span><span>Gabor Filter</span>
+            </div>            
+
+            <!-- <p class="tech-stack">
+                NumPy • Scikit-learn • Computer Vision
+            </p>
+
+            <div class="project-findings">
+                <h4>Key Findings</h4>
+
+                <ul>
+                <li>Implemented multi-scale, multi-orientation Gabor filter banks from scratch.</li>
+                <li>Extracted block-wise orientation energy descriptors.</li>
+                <li>Achieved 80.1% emotion classification accuracy.</li>
+                </ul>
+
+            </div> -->
+
+            <a class="project-link" href="https://github.com/SarupyaMitra/Facial-Emotion-Detection-on-CK-dataset"  target="_blank">
+                GitHub Repo →
+            </a>
+        </div>
     </div>
 
 </div>

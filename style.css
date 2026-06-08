@@ -99,13 +99,7 @@ grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
-.project-card{
-background:#161b22;
-padding:25px;
-border-radius:12px;
-margin-bottom:20px;
-text-align: center;
-}
+
 
 .project-grid{
 display:grid;
@@ -264,53 +258,6 @@ background:#161b22;
     color: #0d1117;
 }
 
-.project-findings{
-    text-align:left;
-    margin-top:20px;
-    margin-bottom:20px;
-}
-
-.project-findings h4{
-    color:#58a6ff;
-    margin-bottom:10px;
-    font-size:1rem;
-}
-
-.project-findings ul{
-    padding-left:20px;
-}
-
-.project-findings li{
-    margin-bottom:8px;
-    line-height:1.5;
-}
-
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 30px rgba(88, 166, 255, 0.12);
-}
-
-.project-card a{
-    margin-top:auto;
-    color:#58a6ff;
-    text-decoration:none;
-    font-weight:600;
-}
-
-.project-card a:hover{
-    text-decoration:underline;
-}
-
-.tech-stack{
-    display:inline-block;
-    background:#21262d;
-    color:#58a6ff;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:0.85rem;
-    margin:15px 0;
-}
-
 /* ════════════════════════════════
    ACTIVE NAV LINK
    ════════════════════════════════ */
@@ -389,4 +336,169 @@ nav ul a:hover {
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+/* ════════════════════════════════
+   Enriched Project Cards
+   ════════════════════════════════ */
+   .project-findings{
+    text-align:left;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.project-findings h4{
+    color:#58a6ff;
+    margin-bottom:10px;
+    font-size:1rem;
+}
+
+.project-findings ul{
+    padding-left:20px;
+}
+
+.project-findings li{
+    margin-bottom:8px;
+    line-height:1.5;
+}
+
+/* .project-card{
+background:#161b22;
+padding:25px;
+border-radius:12px;
+margin-bottom:20px;
+text-align: center;
+} */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background: #161b22;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 8px;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(88, 166, 255, 0.12);
+}
+/* 
+.project-card a{
+    margin-top:auto;
+    color:#58a6ff;
+    text-decoration:none;
+    font-weight:600; 
+    display: inline-block;
+    margin-top: auto;
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: letter-spacing 0.2s ease;
+} */
+
+/* .project-card a:hover{
+    text-decoration:underline;
+    letter-spacing: 0.03em;
+} */
+
+.tech-stack{
+    display:inline-block;
+    background:#21262d;
+    color:#58a6ff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:0.85rem;
+    margin:15px 0;
+}
+
+   .project-img-wrap {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    background: #0d1117;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* transition: transform 0.4s ease; */
+}
+
+.project-card:hover .project-img-wrap img {
+    transform: scale(1.04);
+}
+
+.project-body {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.project-body h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #e6edf3;
+}
+
+.project-body p {
+    font-size: 0.9rem;
+    color: #8b949e;
+    line-height: 1.6;
+}
+
+.project-result {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.result-chip {
+    background: rgba(88, 166, 255, 0.1);
+    color: #58a6ff;
+    border: 1px solid rgba(88, 166, 255, 0.25);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.project-tags span {
+    background: #21262d;
+    color: #c9d1d9;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: auto;
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: letter-spacing 0.2s ease;
+}
+
+.project-link:hover {
+    letter-spacing: 0.03em;
+    text-decoration: underline;
 }
